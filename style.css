@@ -1,0 +1,61 @@
+CSS
+body {
+    background: url('c93a0199-d2f3-4833-88bb-73a93a4bf24a.png') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.main-wrapper {
+    /* REMOVIDO: background: url(...) */
+    background: url('c93a0199-d2f3-4833-88bb-73a93a4bf24a.png') no-repeat center center fixed;
+    border: 3px solid #d4af37;
+    border-radius: 25px;
+    padding: 40px;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 0 30px rgba(0,0,0,0.8);
+    
+    /* ADICIONE ISSO para os botões funcionarem */
+    position: relative;
+    z-index: 10; 
+}
+
+.life-box.active {
+    border-bottom: 4px solid #d4af37; /* Destaque dourado no selecionado */
+}
+
+.life-val {
+    font-size: 4rem;
+    color: #d4af37;
+    font-family: 'Courier New', monospace; /* Estilo digital */
+}
+
+button {
+    background: #d4af37;
+    color: #2c1e0f;
+    border: none;
+    padding: 15px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.player-name-input {
+    background: transparent;
+    border: none;
+    color: #d4af37; /* Dourado */
+    font-size: 1.2rem;
+    width: 100%;
+    font-weight: bold;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+/* Opcional: Efeito quando estiver editando o nome */
+.player-name-input:focus {
+    background: rgba(255, 255, 255, 0.1);
+    outline: none;
+    border-radius: 4px;
+}
